@@ -16,7 +16,7 @@ const Header = () => {
           </span>
         </Navbar.Brand>
         <div className="flex md:order-2">
-          <Button className="bg-primary hover:bg-secondary duration-300">
+          <Button className="bg-primary hover:bg-secondary duration-300 mr-2 md:mr-0">
             Get Started
           </Button>
           <Navbar.Toggle />
