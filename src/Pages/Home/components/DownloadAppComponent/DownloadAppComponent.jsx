@@ -1,17 +1,14 @@
 import React from "react";
 import {
-  APP_MOCKUP,
-  APP_MOCKUP2,
   APP_MOCKUP_ILLUSTRATION,
-  APP_STORE,
+  DOWNLOAD_APP_BUTTONS,
   DOWNLOAD_APP_SUBTITLE,
   DOWNLOAD_APP_TITLE,
-  PLAY_STORE,
 } from "./DownloadAppComponent.config";
 
 const DownloadAppComponent = () => {
   return (
-    <div className="bg-green-50 dark:bg-green-900/10 py-16">
+    <div className="bg-green-50 dark:bg-green-900/10 py-20">
       <div className="container m-auto space-y-8 px-6 md:px-12 lg:px-20">
         <div className="items-center justify-center gap-16 text-center md:flex md:text-left">
           <div className="order-last mb-6 space-y-6 md:mb-0 md:w-7/12 lg:w-6/12">
@@ -22,34 +19,22 @@ const DownloadAppComponent = () => {
               {DOWNLOAD_APP_SUBTITLE}
             </p>
             <div className="flex flex-wrap justify-center gap-4 md:justify-start lg:gap-6">
-              <a
-                href="/"
-                target="blank"
-                title="For Android"
-                aria-label="google play"
-                className="block overflow-hidden"
-              >
-                <img
-                  src={PLAY_STORE}
-                  width="153"
-                  height="46"
-                  alt="google play badge"
-                />
-              </a>
-              <a
-                href="/"
-                target="blank"
-                title="For iPhone"
-                aria-label="app store"
-                className="block overflow-hidden"
-              >
-                <img
-                  src={APP_STORE}
-                  width="153"
-                  height="46"
-                  alt="apple store badge"
-                />
-              </a>
+              {DOWNLOAD_APP_BUTTONS.map((button) => (
+                <a
+                  href={button.link}
+                  target="_blank"
+                  rel="noreferrer"
+                  title={button.title}
+                  aria-label={button.title}
+                  className="block overflow-hidden"
+                >
+                  <img
+                    src={button.icon}
+                    className="w-auto h-14"
+                    alt={button.title + " badge"}
+                  />
+                </a>
+              ))}
             </div>
           </div>
           <img
