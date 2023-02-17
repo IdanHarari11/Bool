@@ -60,7 +60,11 @@ const HeroComponent = () => {
         </div> */}
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-0">
-          <div className="order-2 md:order-1">
+          <div
+            className="order-2 md:order-1"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
             <img
               src={BURGER}
               alt=""
@@ -69,14 +73,32 @@ const HeroComponent = () => {
           </div>
 
           <div className="flex flex-col justify-center gap-5 md:order-2 order-1 text-center md:text-left">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold">
+            <h1
+              className="text-4xl md:text-5xl lg:text-6xl font-bold"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
               {HERO_TITLE}
             </h1>
-            <span className="mx-auto md:mx-0 h-1 w-32 bg-primary block mb-1"></span>
+            <span
+              className="mx-auto md:mx-0 h-1 w-32 bg-primary block mb-1"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            ></span>
 
-            <p className="text-center md:text-justify">{HERO_SUBTITLE}</p>
+            <p
+              className="text-center md:text-justify"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              {HERO_SUBTITLE}
+            </p>
 
-            <div className="flex items-center gap-10 justify-center md:justify-start">
+            <div
+              className="flex items-center gap-10 justify-center md:justify-start"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
               {HERO_FEATURES.map((feature) => (
                 <div key={feature._id}>
                   {feature.icon}
@@ -85,7 +107,11 @@ const HeroComponent = () => {
               ))}
             </div>
 
-            <div className="mt-2 md:mt-5">
+            <div
+              className="mt-2 md:mt-5"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
               <p className="mb-3 font-semibold text-lg">{DOWNLOAD_TEXT}</p>
               <div className="flex items-center justify-center md:justify-start gap-3">
                 {DOWNLOAD_APP_BUTTONS.map((button) => (
