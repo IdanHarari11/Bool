@@ -1,4 +1,9 @@
-import { CTABG } from "./CTAComponent.config";
+import {
+  CTABG,
+  CTA_BUTTON_TEXT,
+  CTA_SUBTITLE,
+  CTA_TITLE,
+} from "./CTAComponent.config";
 
 const CTAComponent = () => {
   return (
@@ -11,17 +16,14 @@ const CTAComponent = () => {
       }}
     >
       <div className="bg-black/50 w-full h-full">
-        <div className="flex flex-col justify-center text-center py-24 max-w-7xl mx-auto items-center">
-          <h2 className="text-5xl font-semibold text-white">
-            WE SERVE YOU THE BEST
+        <div className="flex flex-col justify-center text-center py-24 max-w-7xl mx-auto items-center px-5">
+          <h2 className="text-4xl md:text-5xl font-semibold text-white">
+            {CTA_TITLE}
           </h2>
-          <span className="w-20 h-1 bg-primary block mt-2 mb-3"></span>
-          <p className="text-gray-300">
-            We servce the best food to our customers and we are the best in the
-            town
-          </p>
+          <span className="w-32 h-1 bg-primary block my-3"></span>
+          <p className="text-gray-300">{CTA_SUBTITLE}</p>
           <button className="bg-primary hover:bg-secondary duration-300 px-7 py-2.5 mt-4 text-white font-semibold rounded-lg">
-            Download App
+            {CTA_BUTTON_TEXT}
           </button>
         </div>
       </div>
