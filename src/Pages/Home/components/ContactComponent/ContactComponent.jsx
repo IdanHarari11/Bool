@@ -55,7 +55,7 @@ const ContactComponent = () => {
 
   return (
     <>
-      <div id="contact" className="px-5 border-t border-gray-200">
+      <div id="contact" className="px-5 border-t border-gray-200 bg-gray-50">
         <section className="relative z-10 overflow-hidden py-20 lg:py-[120px]">
           <div className="max-w-7xl mx-auto">
             <div className="-mx-4 flex flex-wrap lg:justify-between items-center">

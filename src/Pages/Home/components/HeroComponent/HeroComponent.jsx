@@ -1,10 +1,13 @@
 import React from "react";
-import heroBG from "../../../../assets/images/background/heroBG.jpg";
-import { ImSpoonKnife } from "react-icons/im";
-import { SlDrop } from "react-icons/sl";
-import { TbLeaf } from "react-icons/tb";
-import playStore from "../../../../assets/images/icons/google-play-badge.png";
-import appStore from "../../../../assets/images/icons/play-store.png";
+import {
+  BURGER,
+  DOWNLOAD_APP_BUTTONS,
+  DOWNLOAD_TEXT,
+  HERO_BG,
+  HERO_FEATURES,
+  HERO_SUBTITLE,
+  HERO_TITLE,
+} from "./HeroComponent.config";
 
 const HeroComponent = () => {
   return (
@@ -12,7 +15,7 @@ const HeroComponent = () => {
       id="home"
       className="bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-700 shadow py-20 md:py-24 px-5"
       style={{
-        backgroundImage: "url(" + heroBG + ")",
+        backgroundImage: "url(" + HERO_BG + ")",
         backgroundPosition: "center",
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
@@ -59,7 +62,7 @@ const HeroComponent = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-0">
           <div className="order-2 md:order-1">
             <img
-              src="https://templatekit.jegtheme.com/burgry/wp-content/uploads/sites/132/2021/07/N2HMMGN-2.png"
+              src={BURGER}
               alt=""
               className="max-w-md mx-auto w-full object-contain hover:-translate-y-2 duration-300"
             />
@@ -67,41 +70,41 @@ const HeroComponent = () => {
 
           <div className="flex flex-col justify-center gap-5 md:order-2 order-1 text-center md:text-left">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold">
-              Order Food Anytime
+              {HERO_TITLE}
             </h1>
             <span className="mx-auto md:mx-0 h-1 w-32 bg-primary block mb-1"></span>
 
-            <p className="text-center md:text-justify">
-              Test our best food and enjoy your meal with your family and
-              friends.
-            </p>
+            <p className="text-center md:text-justify">{HERO_SUBTITLE}</p>
 
             <div className="flex items-center gap-10 justify-center md:justify-start">
-              <div>
-                <ImSpoonKnife className="text-primary text-5xl" />
-                <span>Delicious</span>
-              </div>
-              <div>
-                <SlDrop className="text-primary text-5xl" />
-                <span>Fresh</span>
-              </div>
-              <div>
-                <TbLeaf className="text-primary text-5xl" />
-                <span>Organic</span>
-              </div>
+              {HERO_FEATURES.map((feature) => (
+                <div key={feature._id}>
+                  {feature.icon}
+                  <span>{feature.title}</span>
+                </div>
+              ))}
             </div>
 
             <div className="mt-2 md:mt-5">
-              <p className="mb-3 font-semibold text-lg">
-                Download BOOL Mobile App.
-              </p>
+              <p className="mb-3 font-semibold text-lg">{DOWNLOAD_TEXT}</p>
               <div className="flex items-center justify-center md:justify-start gap-3">
-                <a href="/">
-                  <img src={playStore} alt="" className="h-14" />
-                </a>
-                <a href="/">
-                  <img src={appStore} alt="" className="h-14" />
-                </a>
+                {DOWNLOAD_APP_BUTTONS.map((button) => (
+                  <a
+                    key={button._id}
+                    href={button.link}
+                    target="_blank"
+                    rel="noreferrer"
+                    title={button.title}
+                    aria-label={button.title}
+                    className="block overflow-hidden"
+                  >
+                    <img
+                      src={button.icon}
+                      className="w-auto h-14"
+                      alt={button.title + " badge"}
+                    />
+                  </a>
+                ))}
               </div>
             </div>
           </div>
