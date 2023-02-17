@@ -10,9 +10,9 @@ export const HEADER_ACTION_BUTTON = {
 export const MENU_ITEMS = [
   {
     id: 1,
-    title: "Home",
-    link: "home",
-    icon: "home",
+    title: "Features",
+    link: "features",
+    icon: "apps",
   },
   {
     id: 2,
