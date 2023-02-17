@@ -4,14 +4,22 @@ import { COMPANY_LOGO, COMPANY_NAME, MENU_ITEMS } from "./Header.config";
 
 const Header = () => {
   return (
-    <header className="bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-700 sticky top-0 z-50 shadow">
-      <Navbar fluid={true} rounded={true} className="max-w-7xl mx-auto">
+    <header className="bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-700 sticky top-0 z-50 shadow w-full backdrop-blur">
+      <Navbar
+        fluid={true}
+        rounded={true}
+        className="max-w-7xl mx-auto bg-white/5"
+      >
         <Navbar.Brand
           onClick={() => console.log("Clicked on " + COMPANY_NAME)}
-          className="cursor-pointer"
+          className="cursor-pointer flex justify-center items-center"
         >
-          <img src={COMPANY_LOGO} className="mr-3 h-6 sm:h-9" alt="Bool Logo" />
-          <span className="self-center whitespace-nowrap text-xl font-semibold text-primary dark:text-white">
+          <img
+            src={COMPANY_LOGO}
+            className="mr-2 h-6 sm:h-10"
+            alt="Bool Logo"
+          />
+          <span className="self-center text-2xl font-bold text-primary dark:text-white">
             {COMPANY_NAME}
           </span>
         </Navbar.Brand>
@@ -26,7 +34,7 @@ const Header = () => {
             <Navbar.Link
               key={item.id}
               //   href={item.link}
-              className="cursor-pointer hover:!text-primary dark:hover:text-white duration-300"
+              className="cursor-pointer hover:!text-primary dark:hover:text-white duration-300 !border-b border-transparent hover:!border-primary"
               onClick={() => console.log("Clicked on " + item.title)}
             >
               {item.title}
