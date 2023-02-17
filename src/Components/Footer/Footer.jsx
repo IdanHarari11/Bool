@@ -1,17 +1,15 @@
 import React from "react";
 import {
-  DOWNLOAD_GROUP,
-  DOWNLOAD_SUBTITLE,
-  DOWNLOAD_TITLE,
   FOOTER_LINKS,
+  FOOTER_SOCIAL_LINKS,
   FOOTER_TEXT,
 } from "./Footer.config";
 
 const Footer = () => {
   return (
     <div className=" bg-gray-900 mt-auto">
-      <div className="max-w-7xl mx-auto text-white py-10">
-        <div className="text-center">
+      <div className="max-w-7xl mx-auto text-white py-5">
+        {/* <div className="text-center">
           <h3 className="text-3xl mb-3">{DOWNLOAD_TITLE}</h3>
           <p>{DOWNLOAD_SUBTITLE}</p>
           <div className="flex flex-col items-center md:flex-row justify-center my-10 gap-4">
@@ -31,14 +29,32 @@ const Footer = () => {
               </a>
             ))}
           </div>
-        </div>
-        <div className="flex flex-col md:flex-row md:justify-between items-center text-sm text-gray-400">
-          <p className="order-2 md:order-1 mt-8 md:mt-0">{FOOTER_TEXT}</p>
-          <div className="order-1 md:order-2 divide-x divide-gray-600">
-            {FOOTER_LINKS.map((item) => (
-              <span key={item.id} className="px-2">
-                {item.title}
-              </span>
+        </div> */}
+        <div className="grid justify-center lg:justify-between">
+          <div className="flex flex-col self-center text-sm text-center md:block lg:col-start-1 md:space-x-6  text-gray-400">
+            <span className="order-2 md:order-1 mt-8 md:mt-0">
+              {FOOTER_TEXT}
+            </span>
+            <div className="inline divide-x divide-gray-600">
+              {FOOTER_LINKS.map((item) => (
+                <span key={item.id} className="px-2">
+                  {item.title}
+                </span>
+              ))}
+            </div>
+          </div>
+          <div className="flex justify-center pt-4 space-x-4 lg:pt-0 lg:col-end-13">
+            {FOOTER_SOCIAL_LINKS.map((item) => (
+              <a
+                key={item._id}
+                rel="noopener noreferrer"
+                href={item.link}
+                title={item.title}
+                target="_blank"
+                className="flex items-center justify-center w-10 h-10 rounded-full bg-secondary hover:bg-primary duration-300 text-gray-50"
+              >
+                {item.icon}
+              </a>
             ))}
           </div>
         </div>
