@@ -90,33 +90,29 @@ const ContactComponent = () => {
               <div className="w-full px-4 lg:w-1/2">
                 <div className="relative rounded-lg bg-white border border-gray-100 p-8 shadow-lg sm:p-12">
                   <form ref={form} onSubmit={handleContactFormSubmit}>
-                    <div className="mb-4 lg:mb-6">
-                      {CONTACT_FORM.map((item) => (
-                        <item.input
-                          key={item._id}
-                          type={item.type}
-                          placeholder={item.placeholder}
-                          name={item.name}
-                          id={item.id}
-                          className={classes.inputField + "mb-4 lg:mb-6"}
-                          rows={item.rows ? item.rows : null}
-                          onChange={(e) =>
-                            setFormState({
-                              ...formState,
-                              [e.target.name]: e.target.value,
-                            })
-                          }
-                        />
-                      ))}
-                    </div>
-                    <div>
-                      <button
-                        type={CONTACT_BUTTON.type}
-                        className="bg-primary border-primary w-full rounded border p-3 text-white transition hover:bg-opacity-80"
-                      >
-                        {CONTACT_BUTTON.text}
-                      </button>
-                    </div>
+                    {CONTACT_FORM.map((item) => (
+                      <item.input
+                        key={item._id}
+                        type={item.type}
+                        placeholder={item.placeholder}
+                        name={item.name}
+                        id={item.id}
+                        className={classes.inputField + "mb-4 lg:mb-6"}
+                        rows={item.rows ? item.rows : null}
+                        onChange={(e) =>
+                          setFormState({
+                            ...formState,
+                            [e.target.name]: e.target.value,
+                          })
+                        }
+                      />
+                    ))}
+                    <button
+                      type={CONTACT_BUTTON.type}
+                      className="bg-primary border-primary w-full rounded p-3 text-white duration-300 hover:bg-secondary hover:shadow-md font-medium"
+                    >
+                      {CONTACT_BUTTON.text}
+                    </button>
                   </form>
                 </div>
               </div>
