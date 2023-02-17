@@ -1,8 +1,5 @@
 import React from "react";
 import heroBG from "../../../../assets/images/background/heroBG.jpg";
-import { IoLogoGooglePlaystore } from "react-icons/io5";
-import { AiFillApple, AiFillHighlight } from "react-icons/ai";
-import ProductCard from "../../../../Components/Card/ProductCard/ProductCard";
 import { ImSpoonKnife } from "react-icons/im";
 import { SlDrop } from "react-icons/sl";
 import { TbLeaf } from "react-icons/tb";
