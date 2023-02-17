@@ -1,11 +1,12 @@
 import React from "react";
 import FeatureCard from "../../../../Components/Card/FeatureCard/FeatureCard";
+import OurProcessComponent from "../OurProcessComponent/OurProcessComponent";
 import { FEATURE_DATA, SECTION_BG } from "./FeatureComponent.config";
 
 const FeatureComponent = () => {
   return (
     <div
-      className="scrollMarginTop"
+      className="scrollMarginTop py-28 px-5"
       id="features"
       style={{
         backgroundImage: `url(${SECTION_BG})`,
@@ -14,7 +15,8 @@ const FeatureComponent = () => {
         backgroundPosition: "center",
       }}
     >
-      <div className="py-10 mx-auto max-w-7xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 items-center gap-5 place-content-center self-center px-5">
+      <OurProcessComponent></OurProcessComponent>
+      <div className="mx-auto pt-20 max-w-7xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 items-center gap-5 place-content-center self-center px-5">
         {FEATURE_DATA.map((item) => (
           <FeatureCard key={item._id} data={item}></FeatureCard>
         ))}

@@ -4,11 +4,13 @@ import { JOIN_US_DATA } from "./JoinUsComponent.config";
 
 const JoinUsComponent = () => {
   return (
-    <div className="py-32 px-5" id="join">
+    <div className="py-32 px-5 bg-gray-50" id="join">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl font-medium mb-10 text-center">
-          Join Us Today
-        </h2>
+        <h2 className="text-4xl font-medium mb-5 text-center">Join Us Today</h2>
+        <p className="mx-auto text-center max-w-xl mb-12 text-gray-500">
+          Join us today and get access to our exclusive offers and discounts. We
+          are always looking for new talent to join our team.
+        </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 place-items-center">
           {JOIN_US_DATA.map((item) => (
             <div

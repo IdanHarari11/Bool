@@ -55,8 +55,8 @@ const ContactComponent = () => {
 
   return (
     <>
-      <div id="contact" className="px-5 bg-gray-100 border-t border-gray-200">
-        <section className="relative z-10 overflow-hidden bg-gray-100 py-20 lg:py-[120px]">
+      <div id="contact" className="px-5 border-t border-gray-200">
+        <section className="relative z-10 overflow-hidden py-20 lg:py-[120px]">
           <div className="max-w-7xl mx-auto">
             <div className="-mx-4 flex flex-wrap lg:justify-between items-center">
               <div className="w-full px-4 lg:w-1/2 xl:w-6/12">
