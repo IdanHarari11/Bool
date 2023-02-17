@@ -1,13 +1,12 @@
 import React from "react";
 import FeatureCard from "../../../../Components/Card/FeatureCard/FeatureCard";
-import sectionBG from "../../../../assets/images/background/sectionbg.jpg";
-import { FEATURE_DATA } from "./FeatureComponent.config";
+import { FEATURE_DATA, SECTION_BG } from "./FeatureComponent.config";
 
 const FeatureComponent = () => {
   return (
     <div
       style={{
-        backgroundImage: `url(${sectionBG})`,
+        backgroundImage: `url(${SECTION_BG})`,
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
         backgroundPosition: "center",
