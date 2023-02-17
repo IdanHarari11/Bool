@@ -50,7 +50,7 @@ const ContactComponent = () => {
       "bg-primary text-primary mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-opacity-10 sm:h-[70px] sm:max-w-[70px]",
 
     inputField:
-      "border-gray-300 focus:border-primary w-full rounded border py-3 px-[14px] text-base outline-none focus-visible:shadow-none",
+      "border-gray-300 focus:border-primary w-full rounded border py-3 px-[14px] text-base outline-none focus-visible:shadow-none mb-4 sm:mb-6",
   };
 
   return (
@@ -97,7 +97,7 @@ const ContactComponent = () => {
                         placeholder={item.placeholder}
                         name={item.name}
                         id={item.id}
-                        className={classes.inputField + "mb-4 lg:mb-6"}
+                        className={classes.inputField}
                         rows={item.rows ? item.rows : null}
                         onChange={(e) =>
                           setFormState({

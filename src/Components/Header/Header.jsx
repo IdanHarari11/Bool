@@ -1,6 +1,11 @@
 import { Button, Navbar } from "flowbite-react";
 import React from "react";
-import { COMPANY_LOGO, COMPANY_NAME, MENU_ITEMS } from "./Header.config";
+import {
+  COMPANY_LOGO,
+  COMPANY_NAME,
+  HEADER_ACTION_BUTTON,
+  MENU_ITEMS,
+} from "./Header.config";
 
 const Header = () => {
   const goto = (link) => {
@@ -18,11 +23,7 @@ const Header = () => {
           onClick={() => goto("home")}
           className="cursor-pointer flex justify-center items-center"
         >
-          <img
-            src={COMPANY_LOGO}
-            className="mr-2 h-6 sm:h-10"
-            alt="Bool Logo"
-          />
+          <img src={COMPANY_LOGO} className="mr-2 h-10" alt="Bool Logo" />
           <span className="self-center text-2xl font-bold text-primary dark:text-white">
             {COMPANY_NAME}
           </span>
@@ -30,9 +31,9 @@ const Header = () => {
         <div className="flex md:order-2">
           <Button
             className="bg-primary hover:bg-secondary duration-300 mr-2 md:mr-0"
-            onClick={() => goto("home")}
+            onClick={() => goto(HEADER_ACTION_BUTTON.link)}
           >
-            Get Started
+            {HEADER_ACTION_BUTTON.title}
           </Button>
           <Navbar.Toggle />
         </div>

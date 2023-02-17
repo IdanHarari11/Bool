@@ -2,6 +2,11 @@ import logo from "../../assets/brand/logo.png";
 export const COMPANY_LOGO = logo;
 export const COMPANY_NAME = "BOOL";
 
+export const HEADER_ACTION_BUTTON = {
+  title: "Join Us",
+  link: "join",
+};
+
 export const MENU_ITEMS = [
   {
     id: 1,

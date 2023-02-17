@@ -4,6 +4,7 @@ import CTAComponent from "./components/CTAComponent/CTAComponent";
 import DownloadAppComponent from "./components/DownloadAppComponent/DownloadAppComponent";
 import FeatureComponent from "./components/FeatureComponent/FeatureComponent";
 import HeroComponent from "./components/HeroComponent/HeroComponent";
+import JoinUsComponent from "./components/JoinUsComponent/JoinUsComponent";
 import OurProcessComponent from "./components/OurProcessComponent/OurProcessComponent";
 
 const Home = () => {
@@ -14,6 +15,7 @@ const Home = () => {
       <CTAComponent></CTAComponent>
       <OurProcessComponent></OurProcessComponent>
       <DownloadAppComponent></DownloadAppComponent>
+      <JoinUsComponent></JoinUsComponent>
       <ContactComponent></ContactComponent>
     </>
   );

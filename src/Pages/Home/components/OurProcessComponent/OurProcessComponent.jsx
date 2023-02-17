@@ -13,7 +13,7 @@ const OurProcessComponent = () => {
           <div className="absolute border-t-2 border-gray-300 border-dashed h-1 w-2/3 inset-x-0 top-1/3  mx-auto hidden md:block"></div>
 
           {STEP_DATA.map((item) => (
-            <div key={item.id}>
+            <div key={item._id}>
               <img
                 src={item.icon}
                 alt={item.title + "Icon"}
