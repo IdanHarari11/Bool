@@ -1,3 +1,5 @@
+import { FaFacebookF, FaInstagram } from "react-icons/fa";
+
 import playStoreIcon from "../../assets/images/icons/playstore.png";
 import appleStoreIcon from "../../assets/images/icons/applestore.png";
 
@@ -25,17 +27,27 @@ export const FOOTER_TEXT = `© ${new Date().getFullYear()} Bool. All rights rese
 export const FOOTER_LINKS = [
   {
     id: 1,
-    title: "Home",
-    link: "/",
-  },
-  {
-    id: 2,
     title: "Privacy Policy",
     link: "#privacy",
   },
   {
-    id: 3,
+    id: 2,
     title: "Terms & Conditions",
     link: "#terms",
+  },
+];
+
+export const FOOTER_SOCIAL_LINKS = [
+  {
+    _id: 1,
+    title: "Facebook",
+    icon: <FaFacebookF className="w-5 h-5" />,
+    link: "https://www.facebook.com/bool.delivery/",
+  },
+  {
+    _id: 2,
+    title: "Instagram",
+    icon: <FaInstagram className="w-5 h-5" />,
+    link: "https://www.instagram.com/bool.delivery/",
   },
 ];
