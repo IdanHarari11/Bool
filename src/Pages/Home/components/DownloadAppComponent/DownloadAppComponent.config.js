@@ -17,13 +17,13 @@ export const DOWNLOAD_APP_SUBTITLE =
 // Download Button
 export const DOWNLOAD_APP_BUTTONS = [
   {
-    id: 1,
+    _id: 1,
     title: "Play Store for Android",
     icon: PLAY_STORE,
     link: "https://play.google.com/store/apps/details?id=com.bool.delivery",
   },
   {
-    id: 2,
+    _id: 2,
     title: "App Store for iOS",
     icon: APP_STORE,
     link: "https://apps.apple.com/il/app/bool-%D7%91%D7%95%D7%9C/id1665889586",

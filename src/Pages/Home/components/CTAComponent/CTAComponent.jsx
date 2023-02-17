@@ -8,6 +8,8 @@ import {
 const CTAComponent = () => {
   return (
     <div
+      id="cta"
+      className="scrollMarginTop"
       style={{
         backgroundImage: `url(${CTABG})`,
         backgroundRepeat: "no-repeat",

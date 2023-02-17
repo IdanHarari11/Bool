@@ -1,4 +1,5 @@
 import React from "react";
+import ContactComponent from "./components/ContactComponent/ContactComponent";
 import CTAComponent from "./components/CTAComponent/CTAComponent";
 import DownloadAppComponent from "./components/DownloadAppComponent/DownloadAppComponent";
 import FeatureComponent from "./components/FeatureComponent/FeatureComponent";
@@ -11,6 +12,7 @@ const Home = () => {
       <FeatureComponent></FeatureComponent>
       <CTAComponent></CTAComponent>
       <DownloadAppComponent></DownloadAppComponent>
+      <ContactComponent></ContactComponent>
     </>
   );
 };

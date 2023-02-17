@@ -6,25 +6,25 @@ export const MENU_ITEMS = [
   {
     id: 1,
     title: "Home",
-    link: "/",
+    link: "home",
     icon: "home",
   },
   {
     id: 2,
     title: "About",
-    link: "#about",
+    link: "cta",
     icon: "info",
   },
   {
     id: 3,
-    title: "Services",
-    link: "#services",
+    title: "Get App",
+    link: "download",
     icon: "build",
   },
   {
     id: 4,
     title: "Contact",
-    link: "#contact",
+    link: "contact",
     icon: "contact_mail",
   },
 ];

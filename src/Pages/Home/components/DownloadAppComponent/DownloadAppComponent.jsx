@@ -8,11 +8,14 @@ import {
 
 const DownloadAppComponent = () => {
   return (
-    <div className="bg-green-50 dark:bg-green-900/10 py-20">
-      <div className="container m-auto space-y-8 px-6 md:px-12 lg:px-20">
+    <div
+      id="download"
+      className="bg-primary/10 dark:bg-primary/10 py-20 scrollMarginTop"
+    >
+      <div className="max-w-7xl m-auto space-y-8 px-6 md:px-12 lg:px-20">
         <div className="items-center justify-center gap-16 text-center md:flex md:text-left">
           <div className="order-last mb-6 space-y-6 md:mb-0 md:w-7/12 lg:w-6/12">
-            <h1 className="text-4xl font-bold text-green-900 md:text-5xl dark:text-white">
+            <h1 className="text-4xl font-bold text-primary md:text-5xl dark:text-white">
               {DOWNLOAD_APP_TITLE}
             </h1>
             <p className="text-lg text-gray-600 dark:text-gray-300">
@@ -21,6 +24,7 @@ const DownloadAppComponent = () => {
             <div className="flex flex-wrap justify-center gap-4 md:justify-start lg:gap-6">
               {DOWNLOAD_APP_BUTTONS.map((button) => (
                 <a
+                  key={button._id}
                   href={button.link}
                   target="_blank"
                   rel="noreferrer"

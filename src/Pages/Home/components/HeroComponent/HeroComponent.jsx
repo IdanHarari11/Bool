@@ -9,6 +9,7 @@ import appStore from "../../../../assets/images/icons/play-store.png";
 const HeroComponent = () => {
   return (
     <div
+      id="home"
       className="bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-700 shadow py-20 md:py-24 px-5"
       style={{
         backgroundImage: "url(" + heroBG + ")",
