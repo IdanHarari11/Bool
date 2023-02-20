@@ -22,7 +22,7 @@ const CTAComponent = () => {
         backgroundPosition: "center",
       }}
     >
-      <div className="bg-black/50 w-full h-full">
+      <div className="bg-gray-900/60 dark:bg-gray-900/80 w-full h-full">
         <div className="py-24 max-w-7xl mx-auto px-5 grid grid-cols-1 md:grid-cols-2 place-items-center gap-5">
           <div>
             <img
