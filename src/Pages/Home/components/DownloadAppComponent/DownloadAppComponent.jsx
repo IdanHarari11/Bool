@@ -10,7 +10,7 @@ const DownloadAppComponent = () => {
   return (
     <div
       id="download"
-      className="bg-primary/10 dark:bg-primary/10 py-20 scrollMarginTop"
+      className="bg-primary/10 dark:bg-gray-900 py-20 scrollMarginTop"
     >
       <div className="max-w-7xl m-auto space-y-8 px-6 md:px-12 lg:px-20">
         <div className="items-center justify-center gap-16 text-center md:flex md:text-left">
@@ -30,11 +30,11 @@ const DownloadAppComponent = () => {
                   rel="noreferrer"
                   title={button.title}
                   aria-label={button.title}
-                  className="block overflow-hidden"
+                  className="block overflow-hidden rounded-lg"
                 >
                   <img
                     src={button.icon}
-                    className="w-auto h-14"
+                    className="w-auto h-14 hover:scale-110 duration-300"
                     alt={button.title + " badge"}
                   />
                 </a>
