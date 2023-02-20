@@ -50,12 +50,15 @@ const ContactComponent = () => {
       "bg-primary text-primary mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-opacity-10 sm:h-[70px] sm:max-w-[70px]",
 
     inputField:
-      "border-gray-300 focus:border-primary w-full rounded border py-3 px-[14px] text-base outline-none focus-visible:shadow-none mb-4 sm:mb-6",
+      "border-gray-300 dark:bg-gray-800 dark:border-gray-700 focus:border-primary dark:focus:border-primary w-full rounded border py-3 px-[14px] text-base outline-none focus-visible:shadow-none mb-4 sm:mb-6 dark:text-gray-300",
   };
 
   return (
     <>
-      <div id="contact" className="px-5 border-t border-gray-200 bg-gray-50">
+      <div
+        id="contact"
+        className="px-5 border-t border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-gray-800"
+      >
         <section className="relative z-10 overflow-hidden py-20 lg:py-[120px]">
           <div className="max-w-7xl mx-auto">
             <div className="-mx-4 flex flex-wrap lg:justify-between items-center">
@@ -64,10 +67,10 @@ const ContactComponent = () => {
                   <span className="text-primary mb-1 block text-base font-semibold">
                     {CONTACT_ABOVE_TEXT}
                   </span>
-                  <h2 className="text-dark mb-2 text-[32px] font-bold uppercase sm:text-[40px] lg:text-[36px] xl:text-[40px]">
+                  <h2 className="text-dark dark:text-gray-200 mb-2 text-[32px] font-bold uppercase sm:text-[40px] lg:text-[36px] xl:text-[40px]">
                     {CONTACT_TITLE}
                   </h2>
-                  <p className="text-body-color mb-9 text-base leading-relaxed">
+                  <p className="text-body-color mb-9 text-base leading-relaxed dark:text-gray-300">
                     {CONTACT_BELOW_TEXT}
                   </p>
 
@@ -78,17 +81,19 @@ const ContactComponent = () => {
                     >
                       <div className={classes.contactItem}>{item.icon}</div>
                       <div className="w-full">
-                        <h4 className="text-dark mb-1 text-xl font-bold">
+                        <h4 className="text-dark dark:text-gray-200 mb-1 text-xl font-bold">
                           {item.title}
                         </h4>
-                        <p className="text-gray-700 text-base">{item.text}</p>
+                        <p className="text-gray-700 dark:text-gray-300 text-base">
+                          {item.text}
+                        </p>
                       </div>
                     </div>
                   ))}
                 </div>
               </div>
               <div className="w-full px-4 lg:w-1/2">
-                <div className="relative rounded-lg bg-white border border-gray-100 p-8 shadow-lg sm:p-12">
+                <div className="relative rounded-lg bg-white dark:bg-gray-900 dark:border-gray-700 border border-gray-100 p-8 shadow-lg sm:p-12">
                   <form ref={form} onSubmit={handleContactFormSubmit}>
                     {CONTACT_FORM.map((item) => (
                       <item.input

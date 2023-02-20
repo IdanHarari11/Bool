@@ -1,6 +1,6 @@
 import playStore from "../../../../assets/images/icons/google-play-badge.png";
 import appStore from "../../../../assets/images/icons/play-store.png";
-import burger from "../../../../assets/images/hero/burger.png";
+import mockUp from "../../../../assets/images/mockup/smartphone-mockup.png";
 import heroBG from "../../../../assets/images/background/heroBG.jpg";
 
 // Import Icons
@@ -10,7 +10,7 @@ import { TbLeaf } from "react-icons/tb";
 
 export const PLAY_STORE = playStore;
 export const APP_STORE = appStore;
-export const BURGER = burger;
+export const sideImage = mockUp;
 export const HERO_BG = heroBG;
 
 export const HERO_TITLE = "Order Food Anytime";

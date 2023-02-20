@@ -1,7 +1,7 @@
-import step1Icon from "../../../../assets/images/icons/step/step1.png";
-import step2Icon from "../../../../assets/images/icons/step/step2.png";
-import step3Icon from "../../../../assets/images/icons/step/step3.png";
-import step4Icon from "../../../../assets/images/icons/step/step4.png";
+import step1Icon from "../../../../../../assets/images/icons/step/step1.png";
+import step2Icon from "../../../../../../assets/images/icons/step/step2.png";
+import step3Icon from "../../../../../../assets/images/icons/step/step3.png";
+import step4Icon from "../../../../../../assets/images/icons/step/step4.png";
 
 export const OUR_PROCESS_TITLE = "Friendly & Intuitive System";
 
