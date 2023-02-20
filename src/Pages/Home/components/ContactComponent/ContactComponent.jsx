@@ -50,7 +50,7 @@ const ContactComponent = () => {
       "bg-primary text-primary mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-opacity-10 sm:h-[70px] sm:max-w-[70px]",
 
     inputField:
-      "border-gray-300 dark:bg-gray-800 dark:border-gray-700 focus:border-primary dark:focus:border-primary w-full rounded border py-3 px-[14px] text-base outline-none focus-visible:shadow-none mb-4 sm:mb-6",
+      "border-gray-300 dark:bg-gray-800 dark:border-gray-700 focus:border-primary dark:focus:border-primary w-full rounded border py-3 px-[14px] text-base outline-none focus-visible:shadow-none mb-4 sm:mb-6 dark:text-gray-300",
   };
 
   return (

@@ -30,11 +30,11 @@ const DownloadAppComponent = () => {
                   rel="noreferrer"
                   title={button.title}
                   aria-label={button.title}
-                  className="block overflow-hidden"
+                  className="block overflow-hidden rounded-lg"
                 >
                   <img
                     src={button.icon}
-                    className="w-auto h-14"
+                    className="w-auto h-14 hover:scale-110 duration-300"
                     alt={button.title + " badge"}
                   />
                 </a>
