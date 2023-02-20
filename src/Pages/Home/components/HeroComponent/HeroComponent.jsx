@@ -1,6 +1,6 @@
 import React from "react";
 import {
-  BURGER,
+  sideImage,
   DOWNLOAD_APP_BUTTONS,
   DOWNLOAD_TEXT,
   HERO_BG,
@@ -30,9 +30,9 @@ const HeroComponent = () => {
               data-aos-duration="1000"
             >
               <img
-                src={BURGER}
+                src={sideImage}
                 alt=""
-                className="max-w-md mx-auto w-full object-contain hover:-translate-y-2 duration-300"
+                className="max-w-lg mx-auto w-full object-contain hover:-translate-y-2 duration-300"
               />
             </div>
 

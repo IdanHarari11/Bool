@@ -23,15 +23,15 @@ const CTAComponent = () => {
       }}
     >
       <div className="bg-gray-900/60 dark:bg-gray-900/80 w-full h-full">
-        <div className="py-24 max-w-7xl mx-auto px-5 grid grid-cols-1 md:grid-cols-2 place-items-center gap-5">
+        <div className="py-24 max-w-6xl mx-auto px-5 grid grid-cols-1 md:grid-cols-3 place-items-center gap-5">
           <div>
             <img
               src={CTA_IMAGE}
               alt="Mobile App Screenshot"
-              className="w-full h-auto mx-auto md:mx-0 md:ml-auto"
+              className="max-w-xs h-auto mx-auto md:mx-0 md:ml-auto hover:-translate-y-2 duration-300"
             />
           </div>
-          <div className="flex flex-col justify-center text-center md:text-left items-center md:items-start space-y-8">
+          <div className="flex flex-col justify-center text-center md:text-left items-center md:items-start space-y-8 md:col-span-2">
             <div>
               <h2 className="text-4xl md:text-5xl font-semibold text-white mb-3">
                 {CTA_TITLE}
