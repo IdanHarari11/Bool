@@ -1,17 +1,20 @@
 import React from "react";
 import { HiOutlineChevronRight } from "react-icons/hi";
-import { JOIN_US_DATA } from "./JoinUsComponent.config";
+import {
+  JOIN_US_DATA,
+  JOIN_US_SUBTITLE,
+  JOIN_US_TITLE,
+} from "./JoinUsComponent.config";
 
 const JoinUsComponent = () => {
   return (
     <div className="py-32 px-5 bg-gray-50 dark:bg-gray-800" id="join">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl font-medium mb-5 text-center dark:text-gray-200">
-          Join Us Today
+          {JOIN_US_TITLE}
         </h2>
         <p className="mx-auto text-center max-w-xl mb-12 text-gray-500 dark:text-gray-300">
-          Join us today and get access to our exclusive offers and discounts. We
-          are always looking for new talent to join our team.
+          {JOIN_US_SUBTITLE}
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 place-items-center">
           {JOIN_US_DATA.map((item) => (

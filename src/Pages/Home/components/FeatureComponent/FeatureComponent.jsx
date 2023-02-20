@@ -1,6 +1,6 @@
 import React from "react";
 import FeatureCard from "../../../../Components/Card/FeatureCard/FeatureCard";
-import OurProcessComponent from "../OurProcessComponent/OurProcessComponent";
+import OurProcessComponent from "./components/OurProcessComponent/OurProcessComponent";
 import { FEATURE_DATA, SECTION_BG } from "./FeatureComponent.config";
 
 const FeatureComponent = () => {
